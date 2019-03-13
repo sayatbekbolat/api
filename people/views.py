@@ -10,3 +10,7 @@ class PersonView(viewsets.ModelViewSet):
 class PetView(viewsets.ModelViewSet):
     queryset = Pet.objects.all()
     serializer_class = PetSerializer
+
+class HouseView(viewsets.ModelViewSet):
+    queryset = House.objects.all()
+    serializer_class = HouseSerializer
